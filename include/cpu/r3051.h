@@ -16,7 +16,7 @@ class R3051 {
     private:
         // Access general registers by index
         inline Word getGeneralReg(uint8_t ind);
-        inline void setGeneralReg(uint8_t ind, Word data);
+        inline void setGeneralReg(uint8_t ind, Word val);
 
     private:
         // Numbered general registers

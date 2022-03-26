@@ -18,3 +18,13 @@ void R3051::reset() {
 void R3051::clock(int cycles) {
     return;
 }
+
+Word R3051::getGeneralReg(uint8_t ind) {
+    return general_regs[ind];
+}
+
+void R3051::setGeneralReg(uint8_t ind, Word val) {
+    if (ind) {
+        general_regs[ind] = val;
+    }
+}
