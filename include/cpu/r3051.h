@@ -15,14 +15,14 @@ class R3051 {
 
     private:
         // Access general registers by index
-        inline WordSize getGeneralReg(uint8_t ind);
-        inline void setGeneralReg(uint8_t ind, WordSize data);
+        inline Word getGeneralReg(uint8_t ind);
+        inline void setGeneralReg(uint8_t ind, Word data);
 
     private:
         // Numbered general registers
-        std::array<WordSize, 32> general_regs;
+        std::array<Word, 32> general_regs;
 
         // PC = program counter
         // hi, lo are set by multiplier/divider
-        WordSize pc, hi, lo;
+        Word pc, hi, lo;
 };

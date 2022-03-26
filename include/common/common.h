@@ -7,4 +7,4 @@
 #define MB (1024 * KB)
 #define GB (1024 * MB)
 
-typedef uint32_t WordSize;
+typedef uint32_t Word;
